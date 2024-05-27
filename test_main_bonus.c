@@ -6,7 +6,7 @@
 /*   By: adrmarqu <adrmarqu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 15:07:42 by adrmarqu          #+#    #+#             */
-/*   Updated: 2024/05/27 15:15:00 by adrmarqu         ###   ########.fr       */
+/*   Updated: 2024/05/27 17:25:51 by adrmarqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -323,6 +323,7 @@ int main()
 	a += printf("'%#10X'\n", 0);
 	a += printf("'%010p'\n", NULL);
 	a += printf("'%010s'\n", NULL);
+	a += printf("'%010.3s'\n", NULL);
 	
 	printf("\n");
 	
@@ -332,6 +333,7 @@ int main()
 	b += ft_printf("'%#10X'\n", 0);
 	b += ft_printf("'%010p'\n", NULL);
 	b += ft_printf("'%010s'\n", NULL);
+	b += ft_printf("'%010.3s'\n", NULL);
 
 	printf("\n%d-%d\n", a, b);
 	
