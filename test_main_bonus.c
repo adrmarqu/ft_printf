@@ -6,7 +6,7 @@
 /*   By: adrmarqu <adrmarqu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 15:07:42 by adrmarqu          #+#    #+#             */
-/*   Updated: 2024/05/27 15:08:33 by adrmarqu         ###   ########.fr       */
+/*   Updated: 2024/05/27 15:15:00 by adrmarqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,15 @@ int main()
 	printf("\n%d - %d\n", a, b);
 	printf("\n------------------------------\n");
 	a = printf("Hola como\0 estas?\n");
+	printf("\n");
 	b = ft_printf("Hola como\0 estas?\n");
+	printf("\n");
 	printf("\n%d - %d\n", a, b);
 	printf("\n------------------------------\n");
 	a = printf("Hola como%\0 estas?\n");
+	printf("\n");
 	b = ft_printf("Hola como%\0 estas?\n");
+	printf("\n");
 	printf("\n%d - %d\n", a, b);
 	printf("\n------------------------------\n");
 	a = printf("Hola como%w estas?\n");

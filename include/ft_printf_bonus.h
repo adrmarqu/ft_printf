@@ -6,7 +6,7 @@
 /*   By: adrmarqu <adrmarqu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 13:41:21 by adrmarqu          #+#    #+#             */
-/*   Updated: 2024/05/02 15:24:06 by adrmarqu         ###   ########.fr       */
+/*   Updated: 2024/05/27 15:12:57 by adrmarqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
-# include "libft.h"
+# include "../libft/libft.h"
 
 typedef struct s_flag
 {
