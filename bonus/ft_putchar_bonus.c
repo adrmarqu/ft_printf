@@ -75,5 +75,7 @@ void	ft_putstr_flag(char *s, t_flag *flag)
 		ft_putstr(s, flag);
 		if (flag->minus)
 			ft_add_width(flag, (int)ft_strlen(s), ' ');
+		if (flag->type != 's')
+			free(s);
 	}
 }

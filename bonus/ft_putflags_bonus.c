@@ -26,29 +26,6 @@ void	ft_add_width(t_flag *flag, int len, char c)
 	}
 }
 
-static char	*ft_add_aim_str(char *s, t_flag *flag)
-{
-	char	*r;
-	int		i;
-
-	r = (char *)ft_calloc((size_t)flag->aim + 1, sizeof(char));
-	if (!r)
-	{
-		flag->error = 1;
-		return (NULL);
-	}
-	i = 0;
-	while (i < flag->aim)
-	{
-		r[i] = *s;
-		i++;
-		s++;
-	}
-	s = r;
-	free(r);
-	return (s);
-}
-
 static void	*ft_add_aim_num2(char *s, char *r, t_flag *flag)
 {
 	int	length;
@@ -87,8 +64,8 @@ static char	*ft_add_aim_num(char *s, t_flag *flag)
 			return (NULL);
 		}
 		r = ft_add_aim_num2(s, r, flag);
-		s = r;
-		free(r);
+		free(s);
+		return (r);
 	}
 	return (s);
 }
@@ -98,7 +75,7 @@ char	*ft_put_flags(char *s, t_flag *flag)
 	if (flag->aim != -1)
 	{
 		if (flag->type == 's')
-			s = ft_add_aim_str(s, flag);
+			s[flag->aim] = '\0';
 		else
 			s = ft_add_aim_num(s, flag);
 	}
